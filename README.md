@@ -72,6 +72,7 @@ function emitted() {
 EE.once('event-name', emitted, context);
 EE.on('another-event', emitted, context);
 EE.removeListener('another-event', emitted, context);
+EE.emit('another-event', 'arg1', 'arg2');
 ```
 
 ### Tests and benchmarks
